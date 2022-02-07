@@ -6,6 +6,12 @@ Accountability Accounting, a prominent investment bank, is interested in offerin
 
 ## Results
 
+Steps for analysis:
+- Preprocessing the Data for PCA
+- Reducing Data Dimensions Using PCA
+- Clustering Cryptocurrencies Using K-means
+- Visualizing Cryptocurrencies Results
+
 ![image](https://user-images.githubusercontent.com/67409852/150661880-96770021-f96f-43fc-8f12-88db49193062.png)
 
 ![image](https://user-images.githubusercontent.com/67409852/150661913-f25255bf-8562-46f8-b9aa-9f9d9673bf3f.png)
