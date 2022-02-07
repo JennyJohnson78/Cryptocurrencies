@@ -50,15 +50,27 @@ pcs_df.head(10)
 
 ### Clustering Cryptocurrencies Using K-means
 
-- Using the previous DataFrame, create an elbow curve using hvPlot to find the best value for K
+- Using the previous DataFrame, create an elbow curve using hvPlot and a for loop to find the best value for K
 
-```
-
-```
 ![image](https://user-images.githubusercontent.com/67409852/150661913-f25255bf-8562-46f8-b9aa-9f9d9673bf3f.png)
 
 - Run the K-means algorithm to make predictions of the K clusters for the cryptocurrencies’ data
+```
+# Initialize the K-Means model.
+model = KMeans(n_clusters=4, random_state=0)
+# Fit the model
+model.fit(pcs_df)
+# Predict clusters
+predictions = model.predict(pcs_df)
+predictions
+```
+
 - Create a new DataFrame by concatenating the crypto_df and pcs_df DataFrames on the same columns
+```
+# Create a new DataFrame including predicted clusters and cryptocurrencies features.
+# Concatentate the crypto_df and pcs_df DataFrames on the same columns.
+clustered_df = pd.concat([crypto_df, pcs_df],axis =1)
+```
 - Add another column named "Class" that will hold the predictions
 
 ![image](https://user-images.githubusercontent.com/67409852/150662058-adb818c3-de07-466a-be0b-cab118ca8f25.png)
