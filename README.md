@@ -30,11 +30,14 @@ X.head()
 crypto_scaled = StandardScaler().fit_transform(X)
 print(crypto_scaled[0:5])
 ```
-### Reduce the data dimensions using PCA
+### Reduce the data dimensions using PCA (Principal Component Analysis) algorithm
 
-
+- Apply PCA to reduce the dimensions to three principal components
+- Create a new DataFrame and use the same index as the previous DataFrame and columns named "PC 1", "PC 2", and "PC 3"
 
 ![image](https://user-images.githubusercontent.com/67409852/150661880-96770021-f96f-43fc-8f12-88db49193062.png)
+
+### Clustering Cryptocurrencies Using K-means
 
 ![image](https://user-images.githubusercontent.com/67409852/150661913-f25255bf-8562-46f8-b9aa-9f9d9673bf3f.png)
 
