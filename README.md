@@ -2,6 +2,8 @@
 
 ## Overview
 
+Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrency investment portfolio for its customers. In this analysis, a report will be created that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment. The data will need to be processed to fit the machine learning models. Since there is no known output for what to look for, unsupervised learning will be used. A clustering algorithm will be used to group the cryptocurrencies, and data visualizations will be used to share the findings.
+
 ## Results
 
 ![image](https://user-images.githubusercontent.com/67409852/150661880-96770021-f96f-43fc-8f12-88db49193062.png)
