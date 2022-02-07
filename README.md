@@ -12,6 +12,12 @@ Steps for analysis:
 - Clustering Cryptocurrencies Using K-means
 - Visualizing Cryptocurrencies Results
 
+Preprocess the data by adding it to a DataFrame, removing unnecessary columns, and dropping null values.
+
+To reduce the data dimensions using PCA:
+
+
+
 ![image](https://user-images.githubusercontent.com/67409852/150661880-96770021-f96f-43fc-8f12-88db49193062.png)
 
 ![image](https://user-images.githubusercontent.com/67409852/150661913-f25255bf-8562-46f8-b9aa-9f9d9673bf3f.png)
