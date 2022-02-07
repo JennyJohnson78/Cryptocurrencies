@@ -61,14 +61,11 @@ pcs_df.head(10)
 - Create a new DataFrame by concatenating the crypto_df and pcs_df DataFrames on the same columns
 - Add another column named "Class" that will hold the predictions
 
-![image](https://user-images.githubusercontent.com/67409852/150661993-5607220f-0327-4396-ac37-df036bee1f75.png)
+![image](https://user-images.githubusercontent.com/67409852/150662058-adb818c3-de07-466a-be0b-cab118ca8f25.png)
 
 
 
 ![image](https://user-images.githubusercontent.com/67409852/150661955-dbaec1c0-d1d7-4a3c-a597-26ecaccdfce3.png)
-
-
-![image](https://user-images.githubusercontent.com/67409852/150662058-adb818c3-de07-466a-be0b-cab118ca8f25.png)
 
 ![image](https://user-images.githubusercontent.com/67409852/150662026-4ab727c7-6856-42d2-99d7-62f99bff543b.png)
 
