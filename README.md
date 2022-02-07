@@ -33,7 +33,18 @@ print(crypto_scaled[0:5])
 ### Reduce the data dimensions using PCA (Principal Component Analysis) algorithm
 
 - Apply PCA to reduce the dimensions to three principal components
+```
+# Using PCA to reduce dimension to three principal components.
+pca = PCA(n_components= 3)
+crypto_pca = pca.fit_transform(crypto_scaled)
+crypto_pca
+```
 - Create a new DataFrame and use the same index as the previous DataFrame and columns named "PC 1", "PC 2", and "PC 3"
+```
+# Create a DataFrame with the three principal components.
+pcs_df = pd.DataFrame(data = crypto_pca, columns= ['pc1', 'pc2', 'pc3'],index= crypto_df.index)
+pcs_df.head(10)
+```
 
 ![image](https://user-images.githubusercontent.com/67409852/150661880-96770021-f96f-43fc-8f12-88db49193062.png)
 
