@@ -12,9 +12,25 @@ Steps for analysis:
 - Clustering Cryptocurrencies Using K-means
 - Visualizing Cryptocurrencies Results
 
-Preprocess the data by adding it to a DataFrame, removing unnecessary columns, and dropping null values.
+### Preprocessing the data
 
-To reduce the data dimensions using PCA:
+- Read data into a DataFrame
+- Drop the "IsTrading" column
+- Remove the rows that have at least one null value
+- Create a new DataFrame that only holds the names of the cryptocurrencies
+- Use the get_dummies() method to create variables for the two text features, "Algorithm" and "ProofType" and store the results in a new DataFrame
+```
+# Use get_dummies() to create variables for text features.
+X = pd.get_dummies(crypto_df, columns=['Algorithm', 'ProofType'])
+X.head()
+```
+- Then, use the StandardScaler fit_transform() function to standardize the features from the new DataFrame
+```
+# Standardize the data with StandardScaler().
+crypto_scaled = StandardScaler().fit_transform(X)
+print(crypto_scaled[0:5])
+```
+### Reduce the data dimensions using PCA
 
 
 
