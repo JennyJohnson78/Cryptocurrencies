@@ -77,6 +77,10 @@ clustered_df = pd.concat([crypto_df, pcs_df],axis =1)
 
 ### Visualizing Cryptocurrencies Results
 
-![image](https://user-images.githubusercontent.com/67409852/150661955-dbaec1c0-d1d7-4a3c-a597-26ecaccdfce3.png)
+- Create a 3D scatter plot using the Plotly Express scatter_3d() function to plot the three clusters from the clustered_df DataFrame. Add the CoinName and Algorithm columns to the hover_name and hover_data parameters, respectively, so each data point shows the CoinName and Algorithm on hover.
 
 ![image](https://user-images.githubusercontent.com/67409852/150662026-4ab727c7-6856-42d2-99d7-62f99bff543b.png)
+
+- Create an hvplot scatter plot with x="TotalCoinsMined", y="TotalCoinSupply", and by="Class", and have it show the CoinName when you hover over the the data point.
+
+![image](https://user-images.githubusercontent.com/67409852/150661955-dbaec1c0-d1d7-4a3c-a597-26ecaccdfce3.png)
