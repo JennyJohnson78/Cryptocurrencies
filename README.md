@@ -79,8 +79,11 @@ clustered_df = pd.concat([crypto_df, pcs_df],axis =1)
 
 - Create a 3D scatter plot using the Plotly Express scatter_3d() function to plot the three clusters from the clustered_df DataFrame. Add the CoinName and Algorithm columns to the hover_name and hover_data parameters, respectively, so each data point shows the CoinName and Algorithm on hover.
 
-![image](https://user-images.githubusercontent.com/67409852/150662026-4ab727c7-6856-42d2-99d7-62f99bff543b.png)
+![image](https://user-images.githubusercontent.com/67409852/150661955-dbaec1c0-d1d7-4a3c-a597-26ecaccdfce3.png)
 
 - Create an hvplot scatter plot with x="TotalCoinsMined", y="TotalCoinSupply", and by="Class", and have it show the CoinName when you hover over the the data point.
 
-![image](https://user-images.githubusercontent.com/67409852/150661955-dbaec1c0-d1d7-4a3c-a597-26ecaccdfce3.png)
+![image](https://user-images.githubusercontent.com/67409852/150662026-4ab727c7-6856-42d2-99d7-62f99bff543b.png)
+
+## Summary
+Cryptocurrencies are increasing in popularity and complexity, and the ability to understand and market them to alient will be key to any financial institution's growth. As more and more people look to invest in crypto, having the knowledge of which currencies are on the market and which ones would benefit a specific client will put any institution in a great position to become an industry leader.
